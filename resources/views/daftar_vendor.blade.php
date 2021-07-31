@@ -9,43 +9,45 @@
 </head>
 <body>
     <nav class="menu" tabindex="0">
-        <div class="smartphone-menu-trigger"></div>
-        <header class="avatar">
-            <img src="images/Gas Kita 1 2.png" alt="Logo">
-            <h2>Halo, Selamat Datang <span>Admin</span></h2>
-        </header>
-        <hr>
-        <ul>
-            <li tabindex="0" class="icon">
-                <img src="images/pelangan.png" alt="" class="logo">
-                <span>Pelanggan</span>
-            </li>
-            <li tabindex="0" class="icon-active icon">
-                <img src="images/Vendor LPG.png" alt="" class="logo">
-                <span>Vendor LPG</span>
-            </li>
-            <li tabindex="0" class="icon">
-                <img src="images/settings.png" alt="" class="logo">
-                <span>Vendor Service Kompor</span>
-            </li>
-            <li tabindex="0" class="icon">
-                <img src="images/assessment.png" alt="" class="logo">
-                <span>Finansial</span>
-            </li>
-            <li tabindex="0" class="icon">
-                <img src="images/transfer.png" alt="" class="logo">
-                <span>Bukti Transfer</span>
-            </li>
+        <div class="card">
+            <div class="smartphone-menu-trigger"></div>
+            <header class="avatar">
+                <img src="{{asset('images/Gas Kita 1 2.png')}}" alt="Logo">
+                <h2>Halo, Selamat Datang <span>Admin</span></h2>
+            </header>
             <hr>
-            <li tabindex="0" class="icon">
-                <img src="images/profile.png" alt="" class="logo">
-                <span>Profil</span>
-            </li>
-            <li tabindex="0" class="icon">
-                <img src="images/keluar.png" alt="" class="logo">
-                <span>Keluar</span>
-            </li>
-        </ul>
+            <ul>
+                <li tabindex="0" class="icon">
+                    <img src="{{asset('images/pelangan.png')}}" alt="" class="logo">
+                    <span>Pelanggan</span>
+                </li>
+                <li tabindex="0" class="icon-active icon">
+                    <img src="{{asset('images/Vendor LPG.png')}}" alt="" class="logo">
+                    <span>Vendor LPG</span>
+                </li>
+                <li tabindex="0" class="icon">
+                    <img src="{{asset('images/settings.png')}}" alt="" class="logo">
+                    <span>Vendor Service Kompor</span>
+                </li>
+                <li tabindex="0" class="icon">
+                    <img src="{{asset('images/assessment.png')}}" alt="" class="logo">
+                    <span>Finansial</span>
+                </li>
+                <li tabindex="0" class="icon">
+                    <img src="{{asset('images/transfer.png')}}" alt="" class="logo">
+                    <span>Bukti Transfer</span>
+                </li>
+                <hr>
+                <li tabindex="0" class="icon">
+                    <img src="{{asset('images/profile.png')}}" alt="" class="logo">
+                    <span>Profil</span>
+                </li>
+                <li tabindex="0" class="icon">
+                    <img src="{{asset('images/keluar.png')}}" alt="" class="logo">
+                    <span>Keluar</span>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <main>
@@ -55,8 +57,8 @@
                     Vendor LPG <span>/ Daftar Vendor LPG</span>
                 </div>
                 <div class="setting">
-                    <img src="images/notif.png" alt="" class="notif">
-                    <img src="images/pp.png" alt="" class="profile">
+                    <img src="{{asset('images/notif.png')}}" alt="" class="notif">
+                    <img src="{{asset('images/pp.png')}}" alt="" class="profile">
                 </div>
             </div>
         </div>
@@ -82,12 +84,12 @@
                     <tbody>
                         <tr>
                             <td class="tokoName">
-                                <img src="images/pp.png" alt="" class="picture">
+                                <img src="{{asset('images/pp.png')}}" alt="" class="picture">
                                 <p>Michael John</p>
                             </td>
                             <td>+62 822-9991-2313</td>
                             <td>23/04/2020</td>
-                            <td><img src="images/detail.png" alt=""></td>
+                            <td><img src="{{asset('images/detail.png')}}" alt=""></td>
                             <td>
                                 <select name="" id="" class="verification">
                                     <option value="" class="option">Dropdown</option>
@@ -98,12 +100,12 @@
                         </tr>
                         <tr>
                             <td class="tokoName">
-                                <img src="images/pp.png" alt="" class="picture">
+                                <img src="{{asset('images/pp.png')}}" alt="" class="picture">
                                 <p>Michael John</p>
                             </td>
                             <td>+62 822-9991-2313</td>
                             <td>23/04/2020</td>
-                            <td><img src="images/detail.png" alt=""></td>
+                            <td><img src="{{asset('images/detail.png')}}" alt=""></td>
                             <td>
                                 <select name="" id="" class="verification">
                                     <option value="" class="option">Dropdown</option>
@@ -130,7 +132,7 @@
                     <tbody>
                         <tr>
                             <td class="tokoName">
-                                <img src="images/pp.png" alt="" class="picture">
+                                <img src="{{asset('images/pp.png')}}" alt="" class="picture">
                                 <p>Michael John</p>
                             </td>
                             <td>+62 822-9991-2313</td>
@@ -146,7 +148,7 @@
                         </tr>
                         <tr>
                             <td class="tokoName">
-                                <img src="images/pp.png" alt="" class="picture">
+                                <img src="{{asset('images/pp.png')}}" alt="" class="picture">
                                 <p>Michael John</p>
                             </td>
                             <td>+62 822-9991-2313</td>
@@ -178,7 +180,7 @@
                     <tbody>
                         <tr>
                             <td class="tokoName">
-                                <img src="images/pp.png" alt="" class="picture">
+                                <img src="{{asset('images/pp.png')}}" alt="" class="picture">
                                 <p>Michael John</p>
                             </td>
                             <td>+62 822-9991-2313</td>
@@ -194,7 +196,7 @@
                         </tr>
                         <tr>
                             <td class="tokoName">
-                                <img src="images/pp.png" alt="" class="picture">
+                                <img src="{{asset('images/pp.png')}}" alt="" class="picture">
                                 <p>Michael John</p>
                             </td>
                             <td>+62 822-9991-2313</td>
@@ -212,7 +214,7 @@
                 </table>
             </div>
 
-            {{-- <script>
+            <script>
                 function openCity(status) {
                     var i;
                     var x = document.getElementsByClassName("vendor");
@@ -221,9 +223,8 @@
                     }
                     document.getElementById(status).style.display = "block";
                 }
-            </script> --}}
+            </script>
         </div>
     </main>
-
 </body>
 </html>

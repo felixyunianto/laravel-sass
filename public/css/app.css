@@ -3,12 +3,12 @@ body {
   margin: 0;
   font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #252F40;
-  padding-left: 240px;
+  padding-left: 300px;
 }
 
 main {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
 }
 
@@ -21,11 +21,12 @@ main .helper {
 }
 
 main .content {
-  margin-top: 70px;
+  margin-top: 90px;
   margin-left: 20px;
-  width: 90%;
+  width: 67vw;
   height: 80%;
   background-color: #F6F6F6;
+  box-shadow: #9b9b9b 0px 2px 5px;
   color: linear-gradient(to right, #FA4A0C, #D23A04);
   position: absolute;
   padding: 1.2em 2em;
@@ -60,6 +61,7 @@ main .content .container {
   background-color: #fff;
   padding: 10px;
   border-radius: 12px;
+  box-shadow: #9b9b9b 0px 2px 5px;
 }
 
 main .content .table {
@@ -101,6 +103,7 @@ main .content .table select option {
 
 main .helper-header {
   display: block;
+  margin-top: 10px;
 }
 
 main .helper-header .title {
@@ -125,10 +128,19 @@ main .helper-header .setting .profile {
   border-radius: 10px;
 }
 
+.card {
+  padding: 0px 15px 10px 15px;
+  box-shadow: #9b9b9b 0px 2px 5px;
+  height: 90vh;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
 .menu {
   background: #fff;
   height: 100vh;
-  width: 240px;
+  width: 300px;
   position: fixed;
   top: 0;
   left: 0;
@@ -137,13 +149,14 @@ main .helper-header .setting .profile {
 }
 
 .menu .avatar {
-  padding: 2em 0.5em;
+  padding: 5px 5px;
   text-align: center;
   display: flex;
 }
 
 .menu .avatar img {
-  width: 50px;
+  margin-left: 10px;
+  width: 40px;
   height: 70px;
   border-radius: 50%;
   overflow: hidden;
@@ -153,6 +166,8 @@ main .helper-header .setting .profile {
   font-weight: normal;
   font-size: 15px;
   margin-bottom: 0;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .menu .avatar span {
@@ -178,21 +193,30 @@ main .helper-header .setting .profile {
 }
 
 .menu ul li .logo {
+  padding: 7px;
   margin-right: 5px;
+  border-radius: 5px;
+  box-shadow: #9b9b9b 3px 3px 3px;
 }
 
 .menu ul li:hover {
-  background: linear-gradient(to right, #FA4A0C, #D23A04);
   box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 5px;
+  border-radius: 10px;
 }
 
 .menu ul li:focus {
-  background: linear-gradient(to right, #FA4A0C, #D23A04);
   outline: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 5px;
+  border-radius: 10px;
 }
 
 .menu ul li:active {
-  background: linear-gradient(to right, #FA4A0C, #D23A04);
+  box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 5px;
+}
+
+.menu ul li:hover .logo,
+.menu ul li:focus .logo {
+  background-color: #D23A04;
 }
 
 hr {

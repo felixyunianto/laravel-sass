@@ -2,7 +2,7 @@ $color-1st: #fff;
 $color-2nd: linear-gradient(to right, #FA4A0C, #D23A04);
 $color-font: #252F40;
 
-$menu-width-desktop: 240px;
+$menu-width-desktop: 300px;
 $menu-width-tablet: 90px;
 $menu-width-smartphone: 230px;
 
@@ -16,7 +16,7 @@ body{
 
 main{
 	position:relative;
-	height:100vh;
+	height:90vh;
     width: 100%;
 	
 	.helper{
@@ -27,11 +27,12 @@ main{
         width: 90%;
 	}
     .content{
-        margin-top: 70px;
+        margin-top: 90px;
         margin-left: 20px;
-        width: 90%;
+        width: 67vw;
         height: 80%;
         background-color: #F6F6F6;
+		box-shadow: #9b9b9b 0px 2px 5px;
         color:$color-2nd;
 		position:absolute;
 		padding:1.2em 2em;
@@ -64,6 +65,7 @@ main{
             background-color: $color-1st;
             padding: 10px;
             border-radius: 12px;
+			box-shadow: #9b9b9b 0px 2px 5px;
         }
         .table{
             width: 100%;
@@ -102,6 +104,7 @@ main{
     }
     & .helper-header{
         display: block;
+		margin-top: 10px;
 
         & .title{
             margin-top: 10px;
@@ -125,6 +128,14 @@ main{
     }
 }
 
+.card{
+	padding: 0px 15px 10px 15px ;
+	box-shadow: #9b9b9b 0px 2px 5px;
+	height:90vh;
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
 .menu{
 	background:$color-1st;
 	height:100vh;
@@ -136,11 +147,12 @@ main{
 	outline:none;
 	
 	.avatar{
-		padding:2em 0.5em;
+		padding: 5px 5px;
 		text-align:center;
 		display: flex;
 		img{
-			width:50px;
+			margin-left: 10px;
+			width:40px;
             height: 70px;
 			border-radius:50%;
 			overflow:hidden;
@@ -150,6 +162,8 @@ main{
 			font-weight:normal;
             font-size: 15px;
 			margin-bottom:0;
+			margin-top: 20px;
+			margin-left: 10px;
 		}
         span{
             font-size: 15px;
@@ -171,23 +185,30 @@ main{
 			background-size:auto 20px;
 			transition:all 0.15s linear;
 			cursor:pointer;
-
+			
             & .logo{
+				padding: 7px;
                 margin-right: 5px;
+				border-radius: 5px;
+				box-shadow: #9b9b9b 3px 3px 3px;
             }
 			&:hover{
-				background: $color-2nd;
                 box-shadow: rgba(0,0,0,0.1) 5px 5px 5px;
+				border-radius: 10px;
 			}
-			
 			&:focus{
-                background: $color-2nd;
 				outline:none;
+				box-shadow: rgba(0,0,0,0.1) 5px 5px 5px;
+				border-radius: 10px;
 			}
 			&:active{
-				background: $color-2nd;
+				box-shadow: rgba(0,0,0,0.1) 5px 5px 5px;
 			}
-			
+			&:hover, &:focus{
+				.logo{
+					background-color: #D23A04;
+				}
+			}
 		}
 	}
 }
@@ -204,7 +225,7 @@ hr{
 		width:$menu-width-tablet;
 		
 		.avatar{
-			padding:0.5em;
+			padding: 0.5em;
 			position:relative;
 			img{
 				width:$menu-width-tablet - 30px;
