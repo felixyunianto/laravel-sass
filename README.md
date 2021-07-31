@@ -8,6 +8,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - copy .env.example then rename to .env
 - php artisan key:generate
 - npm install
+- npm run dev
 - php artisan serve
 
 Good luck and have a nice day.
